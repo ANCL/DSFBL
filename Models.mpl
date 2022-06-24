@@ -1,5 +1,5 @@
 
-IntMaplet2 := Maplet([["Which system do you want to apply the DEA algorithm on?"], ["model 1 : Isidori, Alberto, E. D. Sontag, and M. Thoma. Nonlinear control systems. Vol. 3. London: springer, 1995. Example 5.4.1 p249"], ["model 2 : Underactuated rigid spacecraft (Aguilar, Cesar Octavio. Attitude control of a differentially flat underactuated rigid spacecraft. MSc thesis, University of Alberta (2005)."], ["model 3 : Pendulum dynamics (translational & rotational)"], ["model 4 : Slung load system"], ["Insert the model number", TextField['TF1']()], Button("OK", Shutdown(['TF1']))]);
+IntMaplet2 := Maplet([["Which system do you want to apply the DEA algorithm on?"], ["model 1 : Isidori, A., 1995. Nonlinear control systems. Communications and control engineering. Springer. 3rd edition. Example 5.4.1 p249"], ["model 2 : Underactuated rigid spacecraft (Aguilar, Cesar Octavio. Attitude control of a differentially flat underactuated rigid spacecraft. MSc thesis, University of Alberta (2005))."], ["model 3 : Pendulum dynamics (translational & rotational)"], ["model 4 : Slung load system"], ["Insert the model number", TextField['TF1']()], Button("OK", Shutdown(['TF1']))]);
 result := Maplets[Display](IntMaplet2);
 if result[1] = "1" then
     n := 4;
